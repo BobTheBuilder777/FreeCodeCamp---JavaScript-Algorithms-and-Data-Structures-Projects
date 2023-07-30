@@ -15,7 +15,7 @@ function convertToRoman(num) {
     else{
         // split number into its components by power
         let components = [];     // initialize variable to store components by power
-        let highestPower = num.toString().length - 1     // First, convert num to a string to know its biggest power
+        let highestPower = num.toString().length - 1;     // First, convert num to a string to know its biggest power
         let currentNum = num; // create a copy of the original number
         for (let i = highestPower; i >= 0; i--){
             let power = Math.pow(10, i); // set the current power as divisor
